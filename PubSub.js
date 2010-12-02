@@ -57,7 +57,7 @@ var PubSub = function PubSub(obj_or_alsoPassPath_or_unique, alsoPassPath_or_uniq
 		var args;
 		if (arguments.length > 2) {
 			// If passing args as a set of args instead of an array, grab all but the first.
-			args = Array.slice.apply(arguments, [1]); 
+			args = Array.prototype.slice.apply(arguments, [1]); 
 		} else if (callback_args) {
 			args = callback_args;
 		} else {
