@@ -16,6 +16,9 @@ Why am I picking on HFP's implementation?  It's the one I found when I was looki
 * Literally.
 * Well, one.  It auto-attaches to jQuery and then disappears.  But you can do that with mine, too. PubSub(jQuery); delete PubSub;
 
+### Downsides compared to jQuery:
+* No DOM-based bubbling, so it can't replace .click or any events which rely on the DOM tree.
+
 ### Example use ([colored](https://github.com/Groxx/PubSub/blob/master/exampleuse.js)):
     // --------
     // Get it ready
