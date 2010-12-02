@@ -11,7 +11,7 @@
 
 Why am I picking on HFP's implementation?  It's the one I found when I was looking for eventing systems.  No other reason!  They even admit it was "Rewritten blindly." so this is meant in no way to be a dig at their skills.
 
-### Example use:
+### Example use ([colored](https://github.com/Groxx/PubSub/blob/master/exampleuse.js)):
     // --------
     // Get it ready
     // --------
