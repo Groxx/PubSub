@@ -18,11 +18,10 @@
 * No DOM-based bubbling, so it can't replace .click or any events which rely on the DOM tree.
 
 ### Other reasons it rocks:
-* Nearly-agnostic parameters: .publish("e", 1, 2, 3) is the same as .publish("e", [1,2,3]).  Note that this means .publish("e", [1,2,3]) gets expanded to call subscribed_function(1,2,3) and not subscribed_function([1,2,3]).  Pass .publish("e", [[1,2,3]]) if that's desired.
-** Don't like this?  Breaks your code? Let me know, I may change it to only handle params-in-array.
-* Objects as subscriptions: .subscribe(x, function(){}) works, as long as you .publish(x).  Why would you want to?  I don't know.  But you can!
+* Nearly-agnostic parameters: `.publish("e", 1, 2, 3)` is the same as `.publish("e", [1, 2, 3])`.  Note that this means `.publish("e", [1, 2, 3])` gets expanded to call `subscribed_function(1, 2, 3)` and not `subscribed_function([1, 2, 3])`.  Pass `.publish("e", [[1, 2, 3]])` if that's desired.
+* * Don't like this?  Breaks your code? Let me know, I may change it to only handle params-in-array.
 * Event-bubbling halting: similar to jQuery, return `false` to prevent an event from bubbling.  All events at that level will still be called.
-* Global subscriber storage: .subscribe("", function(){}) will be called on _every_ .publish (unless prevented, see above)
+* Global subscriber storage: `.subscribe("", function(){})` will be called on _every_ .publish (unless prevented, see above)
 * *Lightning* fast.  Fast enough to base an entire project around it.  You almost can't get faster than this.
 * No dependencies of any kind, works in all browsers (tested so far.  Help me test!)!
 * Clutters your namespace as minimally as possible.  Only `publish`, `subscribe`, and `unsubscribe` are added.
