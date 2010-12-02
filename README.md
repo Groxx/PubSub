@@ -1,9 +1,10 @@
-###Reasons to use over [HigginsForPresident's pubsub.js](https://github.com/phiggins42/bloody-jquery-plugins/blob/master/pubsub.js):
+### Reasons to use over [HigginsForPresident's pubsub.js](https://github.com/phiggins42/bloody-jquery-plugins/blob/master/pubsub.js):
 * Regularly performs 20%-100% faster on all browsers!
 * Hierarchical events, instead of single-depth!
 * *Correct* unsubscribing code!  HFP's does not unsubscribe an event if it is subscribed twice in a row.
 * No jQuery dependency!
-###Reasons to use over jQuery's .bind and .trigger:
+
+### Reasons to use over jQuery's .bind and .trigger:
 * Regularly performs 30x-100x faster (or more)!
 * Hierarchical events, instead of "namespaces" (which mimic CSS classes, so really aren't namespaces at all)!
 * No jQuery dependency!
