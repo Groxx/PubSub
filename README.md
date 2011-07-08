@@ -1,4 +1,4 @@
-#### Copyright 2011 by Steven Littiebrant under MIT license - changes appreciated but not required: https://github.com/Groxx/PubSub
+#### Copyright 2011 by Steven Littiebrant under a slightly modified MIT license, which is more amenable to minification.  See LICENSE / PubSub.js for details.
 
 ### Reasons to use over [HigginsForPresident's pubsub.js](https://github.com/phiggins42/bloody-jquery-plugins/blob/master/pubsub.js):
 * Regularly performs 20%-100% faster on all browsers!
