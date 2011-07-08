@@ -1,4 +1,4 @@
-
+/** Copyright 2011 by Steven Littiebrant under MIT license - changes appreciated but not required: https://github.com/Groxx/PubSub **/
 ;
 // Creates a new subscription object.  If passed, attaches to the passed object; otherwise, assumes it was called with "new" and binds to `this`.
 // If passed, unique defines the internal unique subscription list's storage name.  By default it is "_sub".
